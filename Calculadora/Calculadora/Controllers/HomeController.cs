@@ -29,6 +29,17 @@ namespace Calculadora.Controllers
 
             return View();
         }
+
+        /// <summary>
+        /// Invocação da View, em modo Post
+        /// </summary>
+        /// <param name="botao">operador selecionado pelo utilizador</param>
+        /// <param name="visor">valor do Visor da calculadora</param>
+        /// <param name="primeiroOperador">var auxiliar: já foi escolhido um operador, ou não...</param>
+        /// <param name="primeiroOperando"> var auxiliar: primeiro operando a ser utilizado</param>
+        /// <param name="operador">var auxiliar: operador a ser utilizado</param>
+        /// <param name="limpaVisor">var auxiliar: se "sim" limpa visor, se "não" não limpa</param>
+        /// <returns></returns>
         [HttpPost]
             
         public IActionResult Index(string botao, 
